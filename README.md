@@ -14,16 +14,11 @@ The project combines multiple transactional datasets to identify the factors mos
 * [Business Problem](#-business-problem)
 * [Objectives](#-objectives)
 * [Dataset](#-dataset)
-* [Dataset Structure](#-dataset-structure)
 * [Tools & Technologies](#-tools--technologies)
-* [Project Workflow](#-project-workflow)
 * [Key Performance Indicators](#-key-performance-indicators)
 * [Analysis Performed](#-analysis-performed)
 * [Key Findings](#-key-findings)
 * [Business Recommendations](#-business-recommendations)
-* [Project Structure](#-project-structure)
-* [How to Run](#-how-to-run)
-* [Important Analytical Note](#-important-analytical-note)
 * [Conclusion](#-conclusion)
 
 ---
@@ -141,6 +136,8 @@ The notebook reports the following dataset sizes:
 | Geolocation          | 1,000,163 |       5 |
 | Category Translation |        71 |       2 |
 
+### Download Dataset: [Click Here](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
 ---
 
 ## 🛠️ Tools & Technologies
@@ -164,38 +161,6 @@ The notebook reports the following dataset sizes:
 * **Google Colab / Jupyter Notebook**
 
 The notebook imports Pandas, NumPy, Matplotlib and Seaborn and uses Seaborn for visualization styling.
-
----
-
-## 🔄 Project Workflow
-
-The analysis follows a structured data-analysis workflow:
-
-```text
-Raw Olist Datasets
-        ↓
-Data Loading
-        ↓
-Data Understanding
-        ↓
-Data Cleaning & Preparation
-        ↓
-Dataset Integration
-        ↓
-Feature Engineering
-        ↓
-Exploratory Data Analysis
-        ↓
-Business Analysis
-        ↓
-Correlation / Root Cause Analysis
-        ↓
-Key Insights
-        ↓
-Business Recommendations
-```
-
-The notebook loads and organizes all nine datasets before performing the analysis.
 
 ---
 
@@ -496,106 +461,7 @@ Payment Performance
 
 ---
 
-# 📁 Project Structure
-
-A recommended GitHub repository structure is:
-
-```text
-olist-ecommerce-analytics/
-│
-├── README.md
-│
-├── notebooks/
-│   └── Brazilian_E_Commerce_Data_Analysis_Updated.ipynb
-│
-├── reports/
-│   └── Olist_E_Commerce_Analytics_Report.pdf
-│
-├── data/
-│   └── README.md
-│
-└── images/
-    └── charts-and-visualizations/
-```
-
-> The raw Olist datasets are not included in this repository unless their redistribution is permitted.
-
----
-
-# ▶️ How to Run
-
-## 1. Clone the Repository
-
-```bash
-git clone <your-repository-url>
-cd olist-ecommerce-analytics
-```
-
-## 2. Install Required Libraries
-
-```bash
-pip install pandas numpy matplotlib seaborn
-```
-
-## 3. Open the Notebook
-
-Launch Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-Then open:
-
-```text
-notebooks/Brazilian_E_Commerce_Data_Analysis_Updated.ipynb
-```
-
-Alternatively, the notebook can be executed using **Google Colab**.
-
----
-
-## 📂 Dataset Setup
-
-The notebook currently loads the datasets from a Google Drive directory:
-
-```text
-/content/drive/MyDrive/Brazilian_E-Commerce_Datasets/
-```
-
-The expected files are:
-
-```text
-olist_orders_dataset.csv
-olist_order_items_dataset.csv
-olist_order_payments_dataset.csv
-olist_order_reviews_dataset.csv
-olist_customers_dataset.csv
-olist_products_dataset.csv
-olist_sellers_dataset.csv
-olist_geolocation_dataset.csv
-product_category_name_translation.csv
-```
-
-Update the dataset path in the notebook if your local directory structure is different.
-
----
-
-# ⚠️ Important Analytical Note
-
-This project uses **observational data**.
-
-Therefore:
-
-> **The relationships identified in this analysis represent associations and patterns, not definitive proof of causation.**
-
-For example, the strong relationship between delivery delays and lower review scores does not by itself prove that delivery delay is the sole cause of poor reviews.
-
-Additional factors may also influence customer satisfaction.
-
----
-
-# 🏁 Conclusion
+## 🏁 Conclusion
 
 The Olist dataset provides a comprehensive view of Brazilian marketplace activity across orders, products, payments, sellers, customers, delivery and reviews.
 
@@ -630,7 +496,7 @@ R$16.01M      Recorded Payment Value
 
 ## 👤 Author
 
-**Your Name**
+**Saikat Pradhan**
 
 Data Analytics | Python | Exploratory Data Analysis
 
