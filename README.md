@@ -1,4 +1,4 @@
-# Brazilian-E-Commerce-Data-Analysis-# 🛒 Olist E-Commerce Analytics
+# 🛒 Olist E-Commerce Analytics
 
 ### Customer Experience & Marketplace Performance Analysis
 
